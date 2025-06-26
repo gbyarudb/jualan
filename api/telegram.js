@@ -79,7 +79,7 @@ export default async function handler(req, res) {
             await cloudflare.createSubdomain(siteName);
             await vercel.deploySite(siteName, global.userData[chatId]);
 
-            await sendTelegramMessage(chatId, `Website kamu sudah jadi bossku! 🚀\nLink: https://${siteName}.bosku.com`);
+            await sendTelegramMessage(chatId, `Website kamu sudah jadi bossku! 🚀\nLink: https://${siteName}.vercel.app`);
         }
 
         res.status(200).json({ status: 'ok' });
