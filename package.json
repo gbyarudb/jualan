@@ -1,0 +1,13 @@
+
+{
+  "name": "telegram-webstore-bot",
+  "version": "1.0.0",
+  "main": "api/telegram.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "^1.12.1",
+    "node-fetch": "^2.6.1"
+  }
+}
